@@ -35,7 +35,7 @@ def prediction(data):
 
 st.title("News Classifier")
 st.write("I can only categorize news as Atheism, Automobiles, Motorcycles, Computer Graphics, Cryptography,Electronics, For Sale, Medicine, Politics, Religion, Space, Sports")
-news_text = st.text_area("Enter News Here","Type Here")
+news_text = st.text_area("Enter News Here\nFor better results, enter the whole article","Type Here")
 if st.button("Classify"):
     prediiction = prediction(news_text)
     st.success("News Categorized as:: {}".format(prediiction))
